@@ -1,0 +1,15 @@
+<launch>
+  <rosparam command="load" file="$(find gui_pkg)/yaml/guiConfig.yaml"/>
+  <rosparam command="load" file="$(find custom_msgs)/yaml/config.yaml"/>
+  <!-- <include file="$(find livox_ros_driver)/launch/livox_lidar.launch"/>
+  <include file="$(find hikrobot_camera)/launch/hikrobot_camera.launch"/> -->
+
+  <node name="communicator_pkg_node" pkg="communicator_pkg" type="communicator_pkg_node" respawn="true" output="screen"/>
+  <!-- <node name="receiver" pkg="communicator_pkg" type="receiver" respawn="true"/>
+  <node name="sender" pkg="communicator_pkg" type="sender" respawn="true"/> -->
+  <node name="serialTest" pkg="communicator_pkg" type="serialTest" respawn="true"  output="screen"/>
+  <!-- <node name="detection_pkg_node" pkg="detection_pkg" type="detect.py" respawn="true"/>
+  <node name="distance_pkg_node" pkg="distance_pkg" type="distance_pkg_node" output="screen" respawn="true"/> -->
+  <!-- <node name="gui_pkg_node" pkg="gui_pkg" type="gui_pkg_node" respawn="true"/>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find hikrobot_camera)/rviz_config/radar_rviz.rviz"/> -->
+</launch>

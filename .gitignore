@@ -1,0 +1,12 @@
+.cache/
+.catkin_tools/
+.catkin_workspace
+.vscode/
+*.bag
+*.bag.orig.active
+*.pt
+*.engine
+*.code-workspace
+recordings/
+src/.vscode/
+*.png

@@ -1,0 +1,43 @@
+GUI:
+  left_cam:
+    calibration:
+      point1:
+        x: 0.247
+        y: 0.070
+      point2:
+        x: 0.541
+        y: 0.411
+      point3:
+        x: 0.632
+        y: 0.411
+      point4:
+        x: 0.614
+        y: 0.016
+
+  right_cam:
+    calibration:
+      point1:
+        x: 0.500
+        y: 0.073
+      point2:
+        x: 0.448
+        y: 0.281
+      point3:
+        x: 0.493
+        y: 0.281
+      point4:
+        x: 0.843
+        y: 0.189
+  
+  topic:
+    left_img_raw: "/home/inno2/ws_radar/src/calibration_image_left.jpg"
+    right_img_raw: "/home/inno2/ws_radar/src/calibration_image_right.jpg"
+    left_calibration_topic: "/left/calibration"
+    right_calibration_topic: "/right/calibration"
+  
+  calibrate_rate: 3
+  is_calibrating: true
+  camera_calibrating: "/home/inno2/ws_radar/src/calibration_image_left.jpg"
+
+  raw_image_length: 2048
+  raw_image_width: 3270

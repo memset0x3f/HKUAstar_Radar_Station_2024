@@ -1,0 +1,1 @@
+roslaunch hikrobot_camera hikrobot_camera_image.launch

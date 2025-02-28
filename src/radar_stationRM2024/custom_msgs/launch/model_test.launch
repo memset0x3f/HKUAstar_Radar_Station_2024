@@ -1,0 +1,8 @@
+<launch>
+  <rosparam command="load" file="$(find custom_msgs)/yaml/config.yaml"/>
+  <include file="$(find hikrobot_camera)/launch/hikrobot_camera_rviz.launch"/>
+
+  <node name="detection_pkg_node" pkg="detection_pkg" type="predict_for_radar.py" output="screen" respawn="true"/>
+  <!-- <node name="distance_pkg_node" pkg="distance_pkg" type="distance_pkg_node" respawn="true"/>
+  <node name="gui_pkg_node" pkg="gui_pkg" type="gui_pkg_node" respawn="true"/> -->
+</launch>
