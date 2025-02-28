@@ -10,3 +10,4 @@
 recordings/
 src/.vscode/
 *.png
+!project_structure.png
